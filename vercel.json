@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "public",
+  "rewrites": [
+    {"source": "/", "destination": "/api/site?__site_route="},
+    {"source": "/:route((?!assets/|api/).+)", "destination": "/api/site?__site_route=:route"}
+  ]
+}
